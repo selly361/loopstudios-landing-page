@@ -5,22 +5,196 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.ico"
+			type="image/x-icon"
+		/>
 		<!-- CSS Stylesheet -->
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- JavaScript -->
-		<script src="js/index.js" defer></script>
+		<script src="js/index.js" defer type="module"></script>
 		<!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-        
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+			rel="stylesheet"
+		/>
+
 		<title>Loop Studios</title>
 	</head>
 	<body>
+		<!-- Header -->
+		<header class="header">
+			<a class="header__logo" href="/">
+				<img src="./assets/images/logo.svg" alt="loopstudios-logo" />
+			</a>
 
+			<button class="header__hamburger header__hamburger--closed" aria-label="menu" aria-expanded="false" aria-controls="header__nav" data-hamburger></button>
+
+			<!-- Navigation -->
+
+			<nav class="nav header__nav">
+				<a class="nav__anchor" href="#">About</a>
+				<a class="nav__anchor" href="#">Careers</a>
+				<a class="nav__anchor" href="#">Events</a>
+				<a class="nav__anchor" href="#">Products</a>
+				<a class="nav__anchor" href="#">Support</a>
+			</nav>
+		</header>
+
+		<!-- Hero Section -->
+		<h1 class="hero-title">Immersive experiences that deliver</h1>
+
+		<!-- About Section -->
+		<div class="about-wrapper">
+			<img
+				class="about-wrapper__img"
+				src="./assets/images/desktop/image-interactive.jpg"
+				alt="man using a vr"
+			/>
+			<div class="about-wrapper__article-container">
+				<article class="about-wrapper__article">
+					<h2 class="heading-medium">The leader in interactive VR</h2>
+					<p class="about-wrapper__body">
+						Founded in 2011, Loopstudios has been producing world-class virtual
+						reality projects for some of the best companies around the globe.
+						Our award-winning creations have transformed businesses through
+						digital experiences that bind to their brand.
+					</p>
+				</article>
+			</div>
+		</div>
+
+		<!-- Creations Section -->
+		<section class="creations-wrapper">
+			<h2 class="heading-medium">OUR CREATIONS</h2>
+
+			<div class="creations__gallery">
+				<!-- Card 001 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--1"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">Deep earth</span>
+					</a>
+				</div>
+				<!-- Card 002 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--2"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">Night arcade</span>
+					</a>
+				</div>
+				<!-- Card 003 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--3"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">Soccer team VR</span>
+					</a>
+				</div>
+				<!-- Card 004 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--4"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">The grid</span>
+					</a>
+				</div>
+				<!-- Card 005 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--5"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">From up above VR</span>
+					</a>
+				</div>
+				<!-- Card 006 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--6"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">Pocket borealis</span>
+					</a>
+				</div>
+				<!-- Card 007 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--7"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">The curiosity</span>
+					</a>
+				</div>
+				<!-- Card 008 -->
+				<div class="creations__gallery-card">
+					<a
+						href="#"
+						class="creations__gallery-caption creations__gallery-caption--8"
+					>
+						<span class="creations__gallery-effect"></span>
+						<span class="creations__gallery-text">Make it fisheye</span>
+					</a>
+				</div>
+			</div>
+			<button class="button--more">SEE ALL</button>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<a href="/">
+					<img src="./assets/images/logo.svg" alt="loopstudios-logo" />
+				</a>
+
+				<!-- Navigation -->
+				<nav class="nav">
+					<a class="nav__anchor" href="#">About</a>
+					<a class="nav__anchor" href="#">Careers</a>
+					<a class="nav__anchor" href="#">Events</a>
+					<a class="nav__anchor" href="#">Products</a>
+					<a class="nav__anchor" href="#">Support</a>
+				</nav>
+
+				<!-- Social Icons -->
+				<nav class="footer__social-icons">
+					<a href="#"><img src="./assets/images/icon-facebook.svg" alt="" /></a>
+					<a href="#"><img src="./assets/images/icon-twitter.svg" alt="" /></a>
+					<a href="#"
+						><img src="./assets/images/icon-pinterest.svg" alt=""
+					/></a>
+					<a href="#"
+						><img src="./assets/images/icon-instagram.svg" alt=""
+					/></a>
+				</nav>
+
+				<!-- Copyright -->
+				<p class="footer__copyrights">
+					© 2021 Loopstudios. All rights reserved.
+				</p>
+			</div>
+		</footer>
 	</body>
 </html>
